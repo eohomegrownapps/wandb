@@ -87,7 +87,7 @@ class WandbCallback(xgb.callback.TrainingCallback):
         xg_reg.fit(X_train,
             y_train,
             eval_set=[(X_test, y_test)],
-            callbacks=[WandbCallback()])
+            callbacks=[WandbCallback()]
         )
         ```
     """
